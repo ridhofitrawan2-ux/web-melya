@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Untuk Kak Melyaaa</title>
   <style>
+    .gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  height: 150px;
+  border-radius: 15px;
+}
     body {
       margin: 0;
       font-family: 'Comic Sans MS', cursive;
@@ -16,12 +27,22 @@
       animation: gradientMove 10s ease infinite;
     }
 
+    
     @keyframes gradientMove {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
+.bg-foto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2; /* transparan */
+  z-index: -1;
+}
     .page {
       display: none;
       padding: 20px;
@@ -67,7 +88,7 @@
   </style>
 </head>
 <body>
-
+<img src="jp2.jpeg" class="bg-foto">
 <audio id="bgm" autoplay muted loop>
   <source src="lagu.mp3" type="audio/mpeg">
 </audio>
@@ -77,8 +98,10 @@
   <h1>Hai Kakk Melyaaa 💖</h1>
   <div class="heart">💗</div>
   <p>Aku punya sesuatu buat kakak 🥺</p>
-  <p> ini tuu ga terlalu wahh bangett cumannn semoga kakak seneng yaa bacanyaaaaa..</p>
-  <button onclick="nextPage(2)">Mulai Lagunyaaa kakkkkkk.....</button>
+  <p> ini tuu ga terlalu wahh bangett cumannn semoga kakak seneng yaa bacanyaaaaa.. </p>
+  <p> ohh iyaaa kalo kakak mauu liat album kakak ada di akhir" yaa</p>
+  <button onclick="nextPage(2)">klik buat mulaii lagunyaa....</button>
+
 </div>
 
 <!-- PAGE 2 -->
@@ -139,6 +162,18 @@ Hari ini, besok, dan seterusnya… tetap jadi Kak Melya yang hebat dan penuh cah
   <p>Terima kasih yaa kakk udh mauu ngehargain aku disini walaupun aku bukan siapa" kakak tapi kakak tuu rasanya ngehargain aku bangett jujur sebenernya aku ga enak kayak gini kakak udh ada cowo jugaa kann, cuman aku emang bener" gabisa nahan semua inii, kakk melyaa tuu cewe pertama yang buat akuu sejatuh cintaa inii, dan aku bakal tetep berjuang buat dapetin kakak tanpa harus merusak hubungan kakak sama orang lain, kakkk kalo akuuu gamau kita asing, akuu mauu kita selalu dekettt aku gamauu kitaa jauh, kakk melyaa kalo mauu cerita mauu butuh temenn apa" kabarin ridho ajaaa yaaa ridho bakal selalu ada buat kakakk, dan kalo kakak butuhh apa" butuh bantuan atau apapun ituu selagi ridho bisa bantu bakal ridho bantu kokkkk, jangan sungkan" yaa kakkk anggap ajaaa akuuu sodaraa kakak, intinyaaa makasihhh kakkkk makasih banyakk yaaaa kalo ridho sukaa bikin kakak kesel ituu bukan berarti ridho ga cayang ama kakak cumann emang ridho tuuu gituuuuuu, gapernah ada niatan buat kakak kesel kokkk, apalagi yang kemarenn kann pas ridho hujat" kakak ituu soal nilaii ituu cuman bercanda doangg, dann ridho gapernahhhh mauuu bikin kakak sakit hatiiiii🥺</p>
   <p>“Kalau suatu hari Kak Melya ngerasa capek sama dunia… jangan lupa ya, ada aku yang selalu nganggep Kakak itu berharga, bahkan di saat Kakak ngerasa gak ada apa-apanya.”</p>
   <p> dan aku harap suatu saat nanti kita bisa bareng" yaa kakkk, tapi akuu ga maksa kakakk kokkk, semangatt kakkk, makasih yaa udahh mauuu bacaaa semuanyaaa💖💖💖💖💖💖, maaf nihhh kalo surprisenyaa ga bagus" bangetttt hehehehehhee</p>
+<h2>Foto Bidadari disinii 📸💖</h2>
+
+<div class="gallery">
+  <img src="bg.jpeg">
+  <img src="jp1.jpeg">
+  <img src="jp3.jpeg">
+  <img src="jp4.jpeg">
+  <img src="jp5.jpeg">
+  <img src="jp6.jpeg">
+  <img src="jp7.jpeg">
+  <img src="jp8.jpeg">
+  <img src="jp9.jpeg">
 </div>
 
 <script>
