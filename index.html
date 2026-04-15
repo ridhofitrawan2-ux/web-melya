@@ -68,7 +68,7 @@
 </head>
 <body>
 
-<audio autoplay loop>
+<audio id="bgm" autoplay muted loop>
   <source src="lagu.mp3" type="audio/mpeg">
 </audio>
 
@@ -142,6 +142,25 @@ Hari ini, besok, dan seterusnya… tetap jadi Kak Melya yang hebat dan penuh cah
 </div>
 
 <script>
+const audio = document.getElementById("bgm");
+
+// autoplay + unmute
+window.addEventListener("load", () => {
+  audio.volume = 0.5;
+  setTimeout(() => {
+    audio.muted = false;
+    audio.play().catch(() => {
+      console.log("Autoplay diblok browser");
+    });
+  }, 1000);
+});
+
+// fallback klik (biar pasti bunyi)
+document.addEventListener("click", () => {
+  audio.muted = false;
+  audio.play();
+}, { once: true });
+
 function nextPage(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page' + page).classList.add('active');
